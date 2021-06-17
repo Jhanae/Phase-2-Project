@@ -4,61 +4,95 @@
         "id": 1, 
         "moons": 0, 
         "radius": "1,516",
-        "distanceFromSun":136
+        "distanceFromSun":136,
+        "temperatureInF": 800,
+        "type":"Terrestrial planet",
+        "description":"The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.(NASA)"
+
     },
    {
        "name": "Venus",
        "id":2,
        "moons":0,
-       "radius":"ß",
-       "distanceFromSun":67
+       "radius":"3,760",
+       "distanceFromSun":67,
+       "temperatureInF": 880,
+        "type": "Terrestrial planet",
+       "description": "Venus is the second planet from the Sun and is Earth’s closest planetary neighbor. It’s one of the four inner, terrestrial (or rocky) planets, and it’s often called Earth’s twin because it’s similar in size and density.(NASA)"
     },
     {
         "name": "Earth",
         "id":3,
         "moons":1,
         "radius":"3,959",
-        "distanceFromSun":93
+        "distanceFromSun":93,
+        "temperatureInF": 61,
+        "type": "Terrestrial planet",
+        "description": "Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things.(NASA)"
+
     },
     {
         "name": "Mars",
         "id":4,
         "moons":2,
         "radius":"2,106",
-        "distanceFromSun":142
+        "distanceFromSun":142,
+        "temperatureInF": -20,
+        "type": "Terrestrial planet",
+        "description": "​Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere.Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.(NASA)"
+
     },
         {
         "name": "Jupiter",
         "id":5,
         "moons":79,
         "radius":"43,441",
-        "distanceFromSun":484
+        "distanceFromSun":484,
+        "temperatureInF": -162,
+        "type": "Gas Giant",
+        "description": "Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined.(NASA)"
     },
     {
         "name": "Saturn",
         "id": 6,
         "moons": 82,
         "radius": "36,184",
-        "distanceFromSun":886
+        "distanceFromSun":886,
+        "temperatureInF": -218,
+        "type": "Gas Giant",
+        "description": "Saturn is the sixth planet from the Sun and the second largest planet in our solar system.(NASA)"
+
     },
     {
         "name": "Uranus",
         "id": 7,
         "moons": 27,
         "radius": "15,759",
-        "distanceFromSun":18000
+        "distanceFromSun":18000,
+        "temperatureInF": -320,
+        "type": "Ice Giant",
+        "description": "The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.(NASA)"
+
+    },
     {
         "name": "Neptune",
         "id": 8,
         "moons": 27,
         "radius": "15,299",
-        "distanceFromSun":28000
+        "distanceFromSun":28000,
+        "temperatureInF": -331,
+        "type": "Ice Giant",
+        "description": "Dark, cold and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.(NASA)"
     },
     {
         "name": "Pluto",
         "id": 9,
         "moons": 5, 
         "radius": 738,
-        "distanceFromSun":36000
+        "distanceFromSun":36000,
+        "temperatureInF": -375,
+        "type": "Dwarf Planet",
+        "description": "Since 2006, per the International Astronomical Union’s planetary criteria, Pluto isn’t considered a planet because it hasn’t cleared the neighborhood around its orbit of other objects.(NASA)"
+
     }
 ]
