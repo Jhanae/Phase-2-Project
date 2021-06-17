@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Mercury",
+        "id": 1, 
+        "moons": 0, 
+        "radius": "1,516",
+        "distanceFromSun":136
+    },
+   {
+       "name": "Venus",
+       "id":2,
+       "moons":0,
+       "radius":"ß",
+       "distanceFromSun":67
+    },
+    {
+        "name": "Earth",
+        "id":3,
+        "moons":1,
+        "radius":"3,959",
+        "distanceFromSun":93
+    },
+    {
+        "name": "Mars",
+        "id":4,
+        "moons":2,
+        "radius":"2,106",
+        "distanceFromSun":142
+    },
+        {
+        "name": "Jupiter",
+        "id":5,
+        "moons":79,
+        "radius":"43,441",
+        "distanceFromSun":484
+    },
+    {
+        "name": "Saturn",
+        "id": 6,
+        "moons": 82,
+        "radius": "36,184",
+        "distanceFromSun":886
+    },
+    {
+        "name": "Uranus",
+        "id": 7,
+        "moons": 27,
+        "radius": "15,759",
+        "distanceFromSun":18000
+    {
+        "name": "Neptune",
+        "id": 8,
+        "moons": 27,
+        "radius": "15,299",
+        "distanceFromSun":28000
+    },
+    {
+        "name": "Pluto",
+        "id": 9,
+        "moons": 5, 
+        "radius": 738,
+        "distanceFromSun":36000
+    }
+]
