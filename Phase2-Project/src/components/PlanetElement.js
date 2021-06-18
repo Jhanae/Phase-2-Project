@@ -3,16 +3,17 @@ import React from 'react'
 function PlanetElement({planet}) {
     console.log(planet.image)
     return (
-        <div className="card-deck row">
-            <div className="card col-md-5" >
+        <div className="card text-center shadow col-md-3 ">
+            <div className="overflow" >
                 <img src={planet.image} className="img-fluid card-img-top" alt={planet.name}/>
-                <div className="card-body">
+            </div>
+                <div className="card-body text-dark">
                 <h5 className="card-title">{planet.name}</h5>
-                <p className="card-text">{planet.description}</p>
-                </div>
-                <div className="card-footer col">
+                <p className="card-text text-secondary">{planet.description}</p>
+                <a href='#about' className="btn btn-outline-success">View Planet</a>
+                {/* <div className="card-footer col">
                 <small className="text-muted">Last updated 3 mins ago</small>
-                </div>
+                </div> */}
             </div>
             <br />
         </div>

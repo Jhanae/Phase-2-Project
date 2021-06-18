@@ -13,6 +13,31 @@
   height: 900px;
 }
 
+.card{
+  width: 20rem;
+  margin: 0.8rem;
+}
+.card-body{
+  padding: 1rem;
+}
+.card-text{
+  font-size: 0.9rem;
+  padding: 0.4rem;
+}
+.card:hover{
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 253)!important;
+}
+.container-fluid{
+  padding-top: 4rem;
+}
+.card-img-top:hover{
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.overflow{
+  overflow: hidden;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
