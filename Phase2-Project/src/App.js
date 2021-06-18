@@ -1,19 +1,24 @@
 import './App.css';
 import React from 'react'
 import PlanetData from './db.json'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import PlanetContainer from './components/PlanetContainer';
-import homeBody from './components/homeBody';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './components/pages/home'
+import Home from './components/home'
 
 
 function App() {
   return (
     <div className="App">
+      <Router>
       <Navbar />
-      <PlanetContainer data={PlanetData}/>
+      <Switch>
+        <Route exact path="/home" component={Home}/>
+      {/* <PlanetContainer data={PlanetData}/> */}
+      <Route path="/planets" component={() => <PlanetContainer data={PlanetData}/>} />
+      </Switch>
+      </Router>
     </div>
   );
 }

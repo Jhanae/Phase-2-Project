@@ -1,17 +1,58 @@
 /* video stuff */
 video{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.video-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.video-container > h1{
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
+  content: center;
+}
+
+.video-container > p{
+  margin-top: 9px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+  font-size: 32px;
+
+}
+.videobtns{
+  margin: 6px;
+}
+
+.fa.play.circle {
+  margin: left;
+}
+
+@media screen and (max-width:960px) {
+  .video-container > h1{
+    font-size: 70px;
+    margin-top: -150px;
   }
-  
-  .video-container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
+}
+
+@media screen and (max-width:780px) {
+  .video-container > h1{
+    font-size: 50px;
+    margin-top: -100px;
   }
+}
+
+.video-container > p {
+  font-size: 30px;
+}
+

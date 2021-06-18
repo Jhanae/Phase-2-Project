@@ -1,7 +1,6 @@
 import { Button } from 'bootstrap'
 import React from 'react'
 import video from "./Pictures/spaceVideo.mp4"
-import './homeBody.css'
 
 function homeBody(){
     return (

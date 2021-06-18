@@ -17,15 +17,17 @@ function Navigation(){
                 <Nav>
                     <NavDropdown.Item href="/home">Home</NavDropdown.Item>   
                     <NavDropdown title="Planets">
-                    <NavDropdown.Item href="#planets/">Mercury</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/coffee">Venus</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/chocolate">Earth</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/chocolate">Mars</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/chocolate">Jupiter</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/chocolate">Saturn</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/chocolate">Uranus</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/chocolate">Neptune</NavDropdown.Item>
-                    <NavDropdown.Item href="#planets/chocolate">Pluto</NavDropdown.Item>
+                    <NavDropdown.Item href="#planets/shopping">All Planets</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="planets/mercury">Mercury</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/venus">Venus</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/earth">Earth</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/mars">Mars</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/jupiter">Jupiter</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/saturn">Saturn</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/uranus">Uranus</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/neptune">Neptune</NavDropdown.Item>
+                    <NavDropdown.Item href="planets/pluto">Pluto</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#planets/shopping">Buy a Star</NavDropdown.Item>
                     </NavDropdown>
