@@ -24,6 +24,8 @@ function AddNewForm (){
             <input type="text" id="image" name="image"></input>
             <label for="description">Description:</label>
             <input type="text" id="description" name="description"></input>
+            <br/>
+            <input type="submit"></input>
 
             
         </form>
