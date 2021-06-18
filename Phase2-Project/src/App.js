@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import PlanetData from './db.json'
 
 import Navbar from './components/Navbar';
-import image from './Pictures/space.jpeg'
 import PlanetContainer from './components/PlanetContainer';
 
 
@@ -10,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <PlanetContainer />
+      <PlanetContainer data={PlanetData} />
     </div>
   );
 }
