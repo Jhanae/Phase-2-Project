@@ -15,6 +15,7 @@ function Navigation(){
                 <Navbar.Toggle className="coloring" />
                 <Navbar.Collapse>
                 <Nav>
+                    <NavDropdown.Item href="/home">Home</NavDropdown.Item>   
                     <NavDropdown title="Planets">
                     <NavDropdown.Item href="#planets/">Mercury</NavDropdown.Item>
                     <NavDropdown.Item href="#planets/coffee">Venus</NavDropdown.Item>
@@ -26,7 +27,7 @@ function Navigation(){
                     <NavDropdown.Item href="#planets/chocolate">Neptune</NavDropdown.Item>
                     <NavDropdown.Item href="#planets/chocolate">Pluto</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#planets/promo">Promo</NavDropdown.Item>
+                    <NavDropdown.Item href="#planets/shopping">Buy a Star</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#blog">Reviews</Nav.Link>
                     <Nav.Link href="#about-us">About Us</Nav.Link>
