@@ -1,0 +1,9 @@
+.main-footer{
+    color:rgba(136, 142, 165, 0.993);
+    background-color: rgba(12, 11, 11, 0.986);
+    padding-top: 2em;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+}

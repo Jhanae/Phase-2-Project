@@ -2,7 +2,6 @@ import '../App.css'
 import './homeBody.css'
 import React from 'react'
 import video from "./Pictures/spaceVideo.mp4"
-import { Button } from './button';
 
 function Home(){
     return(
@@ -10,15 +9,21 @@ function Home(){
             
             <video src={video} autoPlay loop muted />
             
-            <div className="video-btns">
-            <h1>Let's Explore</h1>
-            <p>...the unknown</p>
-                <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
+            <div className="video-btns mx-auto">
+                <br/>
+                <br/>
+                <h1 className="font-weight-bolder">Let's Explore</h1>
+                <h5 className="font-italic">...the unknown</h5>
+                <br/>
+                <br/>
+                <a className="btn btn-lg btn-light" href="/planets">
                     View All Planets
-                </Button>
-                <Button className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                </a>
+                <vr />
+                <a className="btn btn-lg btn-light" href="/newplanet">
                     Register A Planet
-                </Button>
+                </a>
+                {/* <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> */}
             </div>
         </div>
     );

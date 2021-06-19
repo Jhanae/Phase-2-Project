@@ -7,7 +7,7 @@ const PlanetContainer = ({data}) => {
        return <PlanetElement planet={item} key={item.id} />
     })
     return (
-        <div className="container-fluid d-flex justify-content-center">
+        <div className="planet-container container-fluid d-flex justify-content-center">
             <div className="row">
                     {planet}
             </div>
