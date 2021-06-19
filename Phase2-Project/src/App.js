@@ -16,9 +16,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/home" component={Home}/>
-      {/* <PlanetContainer data={PlanetData}/> */}
-      <Route path="/planets" component={() => <PlanetContainer data={PlanetData}/>}/>
-      <Route path="/newplanet" component={AddNewForm}/>
+        <Route path="/planets" component={() => <PlanetContainer data={PlanetData}/>}/>
+        <Route path="/newplanet" component={AddNewForm}/>
       </Switch>
       </Router>
     </div>
