@@ -9,7 +9,6 @@
         "type":"Terrestrial planet",
         "description":"The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.(NASA)",
         "image":"https://nineplanets.org/wp-content/uploads/2020/03/mercury.png"
-
     },
    {
        "name": "Venus",
@@ -21,6 +20,7 @@
         "type": "Terrestrial planet",
        "description": "Venus is the second planet from the Sun and is Earth’s closest planetary neighbor. It’s one of the four inner, terrestrial (or rocky) planets, and it’s often called Earth’s twin because it’s similar in size and density.(NASA)",
        "image": "https://nineplanets.org/wp-content/uploads/2020/03/venus.png"
+
     },
     {
         "name": "Earth",
@@ -32,7 +32,6 @@
         "type": "Terrestrial planet",
         "description": "Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things.(NASA)",
         "image": "https://nineplanets.org/wp-content/uploads/2020/03/earth.png"
-
     },
     {
         "name": "Mars",
@@ -44,7 +43,6 @@
         "type": "Terrestrial planet",
         "description": "​Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere.Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.(NASA)",
         "image": "https://nineplanets.org/wp-content/uploads/2020/03/mars.png"
-
     },
         {
         "name": "Jupiter",
@@ -67,7 +65,6 @@
         "type": "Gas Giant",
         "description": "Saturn is the sixth planet from the Sun and the second largest planet in our solar system.(NASA)",
         "image": "https://nineplanets.org/wp-content/uploads/2020/03/saturn.png"
-
     },
     {
         "name": "Uranus",
@@ -79,7 +76,6 @@
         "type": "Ice Giant",
         "description": "The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.(NASA)",
         "image": "https://nineplanets.org/wp-content/uploads/2020/03/uranus.png"
-
     },
     {
         "name": "Neptune",
@@ -102,6 +98,5 @@
         "type": "Dwarf Planet",
         "description": "Since 2006, per the International Astronomical Union’s planetary criteria, Pluto isn’t considered a planet because it hasn’t cleared the neighborhood around its orbit of other objects.(NASA)",
         "image": "https://nineplanets.org/wp-content/uploads/2020/03/pluto.png"
-
     }
 ]
