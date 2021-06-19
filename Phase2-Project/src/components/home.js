@@ -13,10 +13,10 @@ function Home(){
             <div className="video-btns">
             <h1>Let's Explore</h1>
             <p>...the unknown</p>
-                <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
+                <Button destination='/sign-up' className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
                     View All Planets
                 </Button>
-                <Button className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                <Button destination="/newplanet" className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
                     Register A Planet
                 </Button>
             </div>
