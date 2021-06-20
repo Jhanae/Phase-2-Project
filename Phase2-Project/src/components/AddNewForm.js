@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import background from "./Pictures/space.jpeg"
 
 function AddNewForm (){
     const [name, setName]=useState("")
@@ -36,31 +37,34 @@ function AddNewForm (){
     }
 
     return (
+        <div style={{backgroundImage: `url(${background})`,
+        height: "430px"}}>
         <form>
-        <label for="name">Planet Name:</label>
+        <label htmlFor="name">Planet Name:</label>
         <input type="text" id="name" name="name" value={name} onChange={handleName}></input>
-        <label for="moons">Moons:</label>
+        <label htmlFor="moons">Moons:</label>
         <input type="text" id="moons" name="moons" value={moons} onChange={handleMoons}></input>
-        <label for="radius">Radius:</label>
+        <label htmlFor="radius">Radius:</label>
         <input type="text" id="radius" name="radius" value={radius} onChange={handleRadius}></input>
-        <label for="distance">Distance from the Sun in Mi.:</label>
+        <label htmlFor="distance">Distance from the Sun in Mi.:</label>
         <input type="text" id="distance" name="distance" value={distance} onChange={handleDistance}></input><br/>
-        <label for="temperature">Temperature in degrees F:</label>
+        <label htmlFor="temperature">Temperature in degrees F:</label>
         <input type="text" id="temperature" name="temperature" value={temperature} onChange={handleTemperature}></input>
-        <label for="type">Type:</label>
+        <label htmlFor="type">Type:</label>
         <select id="type" name="type" value={type} onChange={handleType}>
             <option value="Terrestrial">Terrestrial</option>
             <option value="Gas Giant">Gas Giant</option>
             <option value="Ice Giant">Ice Giant</option>
             <option value="Dwarf Planet">Dwarf Planet</option>
         </select>
-        <label for="image">Image URL:</label>
+        <label htmlFor="image">Image URL:</label>
         <input type="text" id="image" name="image" value={image} onChange={handleImage}></input>
-        <label for="description">Description:</label>
+        <label htmlFor="description">Description:</label>
         <input type="text" id="description" name="description" value={desc} onChange={handleDesc}></input>
         <br/>
         <input type="submit"></input>
     </form>
+    </div>
 )
 
 }
