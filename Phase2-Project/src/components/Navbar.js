@@ -34,6 +34,7 @@ function Navigation(){
                     <Nav.Link href="/reviews">Reviews</Nav.Link>
                     <Nav.Link href="/about-us">About Us</Nav.Link>
                     <Nav.Link href="/contact-us">Contact Us</Nav.Link>
+
                     <Nav.Link href="/newplanet">Register a New Planet</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>

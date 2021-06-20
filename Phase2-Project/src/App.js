@@ -22,6 +22,7 @@ function App() {
         <Route path="/planets" component={() => <PlanetContainer data={PlanetData}/>} />
         <Route exact path="/newplanet" component={AddNewForm}/>
         <Route exact path="/about-us" component={About}/>
+
       </Switch>
       </Router>
       </div>
