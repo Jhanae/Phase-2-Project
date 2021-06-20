@@ -1,6 +1,6 @@
-import React,{useState} from "react";
+import React,{ useState } from "react";
 
-function AddNewForm (){
+function AddNewForm ({planetData,setPlanetData}){
     const [name, setName]=useState("")
     const [moons, setMoons]=useState("")
     const [radius, setRadius]=useState(0)
@@ -9,6 +9,25 @@ function AddNewForm (){
     const [type, setType]=useState("Terrestrial")
     const [image,setImage]=useState("")
     const [desc, setDesc]=useState("")
+    
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData={name:name, moons:moons, radius:radius,
+         distanceFromSun:distance, temperatureInF:temperature,
+         type:type, image:image, description:desc}
+    
+    const response= await fetch("http://localhost:3000/PlanetData",{
+        headers: {"Content-Type": "application/json"},
+        method:"POST",
+        body: JSON.stringify(formData)
+    })
+    const newPlanet=await response.json()
+    const dataArray=[...planetData,newPlanet]
+    setPlanetData(dataArray)
+    
+
+  }
 
     function handleName(e){
         setName(e.target.value)
@@ -36,27 +55,27 @@ function AddNewForm (){
     }
 
     return (
-      <form>
-            <label for="name">Planet Name:</label>
+      <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Planet Name:</label>
             <input type="text" id="name" name="name" value={name} onChange={handleName}></input>
-            <label for="moons">Moons:</label>
+            <label htmlFor="moons">Moons:</label>
             <input type="text" id="moons" name="moons" value={moons} onChange={handleMoons}></input>
-            <label for="radius">Radius:</label>
+            <label htmlFor="radius">Radius:</label>
             <input type="text" id="radius" name="radius" value={radius} onChange={handleRadius}></input>
-            <label for="distance">Distance from the Sun in Mi.:</label>
+            <label htmlFor="distance">Distance from the Sun in Mi.:</label>
             <input type="text" id="distance" name="distance" value={distance} onChange={handleDistance}></input><br/>
-            <label for="temperature">Temperature in degrees F:</label>
+            <label htmlFor="temperature">Temperature in degrees F:</label>
             <input type="text" id="temperature" name="temperature" value={temperature} onChange={handleTemperature}></input>
-            <label for="type">Type:</label>
+            <label htmlFor="type">Type:</label>
             <select id="type" name="type" value={type} onChange={handleType}>
                 <option value="Terrestrial">Terrestrial</option>
                 <option value="Gas Giant">Gas Giant</option>
                 <option value="Ice Giant">Ice Giant</option>
                 <option value="Dwarf Planet">Dwarf Planet</option>
             </select>
-            <label for="image">Image URL:</label>
+            <label htmlFor="image">Image URL:</label>
             <input type="text" id="image" name="image" value={image} onChange={handleImage}></input>
-            <label for="description">Description:</label>
+            <label htmlFor="description">Description:</label>
             <input type="text" id="description" name="description" value={desc} onChange={handleDesc}></input>
             <br/>
             <input type="submit"></input>
