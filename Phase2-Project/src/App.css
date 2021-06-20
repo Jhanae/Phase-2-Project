@@ -93,4 +93,12 @@
 /* planet container */
 .planet-container{
   background-image: url("./Pictures/space.jpeg");
+  width: 100%;
+  padding: 2rem;
+  align-content: right;
+}
+.input-group{
+  align-content: center;
+  padding-left:7em;
+  
 }
