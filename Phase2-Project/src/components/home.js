@@ -23,7 +23,6 @@ function Home(){
                 <a className="btn btn-lg btn-light" href="/newplanet">
                     Register A Planet
                 </a>
-                {/* <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> */}
             </div>
             
         </div>
