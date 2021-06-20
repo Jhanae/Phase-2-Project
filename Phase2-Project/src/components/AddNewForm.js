@@ -1,4 +1,5 @@
 import React,{ useState } from "react";
+import background from "./Pictures/space.jpeg"
 
 function AddNewForm ({planetData,setPlanetData}){
     const [name, setName]=useState("")
@@ -55,31 +56,34 @@ function AddNewForm ({planetData,setPlanetData}){
     }
 
     return (
+        <div style={{backgroundImage: `url(${background})`,
+        height: "430px"}}>>
       <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Planet Name:</label>
+            <label style={{color:"white"}} htmlFor="name">Planet Name:</label>
             <input type="text" id="name" name="name" value={name} onChange={handleName}></input>
-            <label htmlFor="moons">Moons:</label>
+            <label style={{color:"white"}} htmlFor="moons">Moons:</label>
             <input type="text" id="moons" name="moons" value={moons} onChange={handleMoons}></input>
-            <label htmlFor="radius">Radius:</label>
+            <label style={{color:"white"}} htmlFor="radius">Radius:</label>
             <input type="text" id="radius" name="radius" value={radius} onChange={handleRadius}></input>
-            <label htmlFor="distance">Distance from the Sun in Mi.:</label>
+            <label style={{color:"white"}} htmlFor="distance">Distance from the Sun in Mi.:</label>
             <input type="text" id="distance" name="distance" value={distance} onChange={handleDistance}></input><br/>
-            <label htmlFor="temperature">Temperature in degrees F:</label>
+            <label style={{color:"white"}} htmlFor="temperature">Temperature in degrees F:</label>
             <input type="text" id="temperature" name="temperature" value={temperature} onChange={handleTemperature}></input>
-            <label htmlFor="type">Type:</label>
+            <label style={{color:"white"}} htmlFor="type">Type:</label>
             <select id="type" name="type" value={type} onChange={handleType}>
                 <option value="Terrestrial">Terrestrial</option>
                 <option value="Gas Giant">Gas Giant</option>
                 <option value="Ice Giant">Ice Giant</option>
                 <option value="Dwarf Planet">Dwarf Planet</option>
             </select>
-            <label htmlFor="image">Image URL:</label>
+            <label style={{color:"white"}} htmlFor="image">Image URL:</label>
             <input type="text" id="image" name="image" value={image} onChange={handleImage}></input>
-            <label htmlFor="description">Description:</label>
+            <label style={{color:"white"}} htmlFor="description">Description:</label>
             <input type="text" id="description" name="description" value={desc} onChange={handleDesc}></input>
             <br/>
             <input type="submit"></input>
         </form>
+        </div>
     )
 
 }
