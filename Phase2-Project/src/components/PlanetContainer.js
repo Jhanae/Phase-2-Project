@@ -6,20 +6,34 @@ import Filter from './Filter'
 const PlanetContainer = ({data}) => {
 
     const [searchText, setSearch] = useState("")
+    const [type, setType] = useState('All')
+    let planet ;
 
     // filter data prop
     const filterText = data.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()))
 
-    // each planet
-    const planet = filterText.map(item => {
-        return <PlanetElement planet={item} key={item.id} />
-     })
+    //  each type
+    const filterType = filterText.filter(item => item.type === type)
 
-    return (
+    if(type === 'All')
+    {
+        console.log(type)
+        planet = data.map(item => {
+            return <PlanetElement planet={item} key={item.id} />
+         })
+    }
+    else{
+        console.log('cant get this function right')
+        planet = filterType.map(item => {
+            return <PlanetElement planet={item} key={item.id} />
+         })
+    }  
+
+     return (
         <div className="planet-container container-fluid  justify-content-center">
             <div className="container">
-                {/* input carousel */}
-                <Filter />
+
+                <Filter setType={setType}/>
                 <div className="input-group-lg">
                 <input
                     type="text"
