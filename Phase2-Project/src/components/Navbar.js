@@ -4,8 +4,8 @@ import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 function Navigation(){
     return (
-        <div className="App" >
-            <Navbar bg="dark" variant="dark"
+        <div className="Nav" >
+            <Navbar bg="transparent" variant="dark"
                 sticky="top" expand="sm" collapseOnSelect>
                 <Navbar.Brand>
                 <img src={Logo} width="40px" height="40px" alt="navLogo"/>{' '}
@@ -15,9 +15,9 @@ function Navigation(){
                 <Navbar.Toggle className="coloring" />
                 <Navbar.Collapse>
                 <Nav>
-                    <NavDropdown.Item href="/home">Home</NavDropdown.Item>   
+                    <Nav.Link href="/home">Home</Nav.Link>   
                     <NavDropdown title="Planets">
-                    <NavDropdown.Item href="#planets/shopping">All Planets</NavDropdown.Item>
+                    <NavDropdown.Item href="/planets">All Planets</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="planets/mercury">Mercury</NavDropdown.Item>
                     <NavDropdown.Item href="planets/venus">Venus</NavDropdown.Item>
@@ -29,19 +29,17 @@ function Navigation(){
                     <NavDropdown.Item href="planets/neptune">Neptune</NavDropdown.Item>
                     <NavDropdown.Item href="planets/pluto">Pluto</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#planets/shopping">Buy a Star</NavDropdown.Item>
+                    <NavDropdown.Item href="/planets/shop">Buy a Star</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#blog">Reviews</Nav.Link>
-                    <Nav.Link href="#about-us">About Us</Nav.Link>
-                    <Nav.Link href="#contact-us">Contact Us</Nav.Link>
+                    <Nav.Link href="/reviews">Reviews</Nav.Link>
+                    <Nav.Link href="/about-us">About Us</Nav.Link>
+                    <Nav.Link href="/contact-us">Contact Us</Nav.Link>
+
                     <Nav.Link href="/newplanet">Register a New Planet</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
 
             </Navbar>
-            <div className="content">
-                <small>Lets take a look among the stars.</small>
-            </div>
         </div>
     )
 }
