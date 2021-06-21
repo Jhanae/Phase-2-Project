@@ -1,8 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import PlanetInfo from "./PlanetInfo"
 
 function PlanetElement({planet}) {
-
+   
     let hrefLink=`planet/${planet.name}`
     
     return (
@@ -13,10 +14,11 @@ function PlanetElement({planet}) {
                 <div className="card-body text-light">
                 <h5 className="card-title ">{planet.name}</h5>
                 <h5 className="card-text text-secondary">{planet.description}</h5>
-                <a href={"/planet/Mercury"} onClick={(e) => {return <PlanetInfo planet={ e.target.value}/>}} className="btn btn-outline-success">View Planet</a>
-                
+                {/* <NavLink to={`/planet/${planet.name}`}>View Planet</NavLink> */}
+                <a href={`/planet/${planet.name}`} 
+                // onClick={(e) => {return <PlanetInfo />}} 
+                className="btn btn-outline-success">View Planet</a> 
             </div>
-            <br />
         </div>
     )
 }
