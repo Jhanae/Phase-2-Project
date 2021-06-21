@@ -9,7 +9,7 @@ function PlanetElement({planet}) {
     return (
         <div className=" text-center  col-md-4 ">
             <div className="overflow" >
-                <img src={planet.image} className="img-fluid " alt={planet.name}/>
+                <img src={planet.image} className="img-fluid card-img-top" alt={planet.name}/>
             </div>
                 <div className="card-body text-light">
                 <h5 className="card-title ">{planet.name}</h5>
