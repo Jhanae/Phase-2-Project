@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import PlanetElement from './PlanetElement'
 // import Button from './button'
 import Filter from './Filter'
+import {Router, Route} from "react-router"
+import PlanetInfo from "./PlanetInfo"
 
 const PlanetContainer = ({data}) => {
 
@@ -47,6 +49,7 @@ const PlanetContainer = ({data}) => {
                     {planet}
                     <br/>
             </div>
+            <Route exact path={`/planet/${planet.name}`} component={()=><PlanetInfo planet={planet}/>}/>
         </div>
     )
 }
