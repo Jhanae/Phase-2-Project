@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/home" component={Home}/>
-        <Route path="/planets" component={() => <PlanetContainer data={PlanetData}/>} />
-        <Route exact path="/newplanet" component={AddNewForm}/>
+        <Route path="/planets" component={() => <PlanetContainer data={planetData}/>} />
+        <Route exact path="/newplanet" component={()=> <AddNewForm setPlanetData={setPlanetData} planetData={planetData}/>}/>
         <Route exact path="/about-us" component={About}/>
       </Switch>
       </Router>

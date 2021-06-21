@@ -59,7 +59,7 @@ function AddNewForm ({planetData,setPlanetData}){
     return (
         <div style={{backgroundImage: `url(${background})`,
         height: "430px"}}>
-        <form>
+        <form onSubmit={handleSubmit}>
         <label style={{color:"white"}} htmlFor="name">Planet Name:</label>
         <input type="text" id="name" name="name" value={name} onChange={handleName}></input>
         <label style={{color:"white"}} htmlFor="moons">Moons:</label>
