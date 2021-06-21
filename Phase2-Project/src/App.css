@@ -105,6 +105,12 @@
   
 }
 
+.PlanetInfo{
+  background-image: url("./Pictures/space.jpeg");
+  width: 100%;
+  padding: 2rem;
+  align-content: right;
+}
 
 
 /* form css */

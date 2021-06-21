@@ -19,7 +19,7 @@ function Navigation(){
                     <NavDropdown title="Planets">
                     <NavDropdown.Item href="/planets">All Planets</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="planets/mercury">Mercury</NavDropdown.Item>
+                    <NavDropdown.Item href="/Mercury">Mercury</NavDropdown.Item>
                     <NavDropdown.Item href="planets/venus">Venus</NavDropdown.Item>
                     <NavDropdown.Item href="planets/earth">Earth</NavDropdown.Item>
                     <NavDropdown.Item href="planets/mars">Mars</NavDropdown.Item>
