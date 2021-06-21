@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React, {useState} from 'react'
 import PlanetData from './db.json'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -10,8 +10,9 @@ import AddNewForm from './components/AddNewForm'
 import About from './components/About'
 import Footer from './components/Footer';
 
-
 function App() {
+  const [planetData, setPlanetData]=useState(PlanetData.PlanetData)
+
   return (
     <div className="App page-container">
       <div className="content-wrap" >
@@ -22,7 +23,6 @@ function App() {
         <Route path="/planets" component={() => <PlanetContainer data={PlanetData}/>} />
         <Route exact path="/newplanet" component={AddNewForm}/>
         <Route exact path="/about-us" component={About}/>
-
       </Switch>
       </Router>
       </div>

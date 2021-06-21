@@ -1,7 +1,8 @@
 import React,{useState} from "react";
+
 import background from "./Pictures/space.jpeg"
 
-function AddNewForm (){
+function AddNewForm ({planetData,setPlanetData}){
     const [name, setName]=useState("")
     const [moons, setMoons]=useState("")
     const [radius, setRadius]=useState(0)
@@ -10,6 +11,25 @@ function AddNewForm (){
     const [type, setType]=useState("Terrestrial")
     const [image,setImage]=useState("")
     const [desc, setDesc]=useState("")
+    
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData={name:name, moons:moons, radius:radius,
+         distanceFromSun:distance, temperatureInF:temperature,
+         type:type, image:image, description:desc}
+    
+    const response= await fetch("http://localhost:3000/PlanetData",{
+        headers: {"Content-Type": "application/json"},
+        method:"POST",
+        body: JSON.stringify(formData)
+    })
+    const newPlanet=await response.json()
+    const dataArray=[...planetData,newPlanet]
+    setPlanetData(dataArray)
+    
+
+  }
 
     function handleName(e){
         setName(e.target.value)
