@@ -57,32 +57,54 @@ function AddNewForm ({planetData,setPlanetData}){
     }
 
     return (
-        <div style={{backgroundImage: `url(${background})`,
-        height: "430px"}}>
-        <form onSubmit={handleSubmit}>
-        <label style={{color:"white"}} htmlFor="name">Planet Name:</label>
-        <input type="text" id="name" name="name" value={name} onChange={handleName}></input>
-        <label style={{color:"white"}} htmlFor="moons">Moons:</label>
-        <input type="text" id="moons" name="moons" value={moons} onChange={handleMoons}></input>
-        <label style={{color:"white"}} htmlFor="radius">Radius:</label>
-        <input type="text" id="radius" name="radius" value={radius} onChange={handleRadius}></input>
-        <label style={{color:"white"}} htmlFor="distance">Distance from the Sun in Mi.:</label>
-        <input type="text" id="distance" name="distance" value={distance} onChange={handleDistance}></input><br/>
-        <label style={{color:"white"}} htmlFor="temperature">Temperature in degrees F:</label>
-        <input type="text" id="temperature" name="temperature" value={temperature} onChange={handleTemperature}></input>
-        <label style={{color:"white"}} htmlFor="type">Type:</label>
-        <select id="type" name="type" value={type} onChange={handleType}>
-            <option value="Terrestrial">Terrestrial</option>
-            <option value="Gas Giant">Gas Giant</option>
-            <option value="Ice Giant">Ice Giant</option>
-            <option value="Dwarf Planet">Dwarf Planet</option>
-        </select>
-        <label style={{color:"white"}} htmlFor="image">Image URL:</label>
-        <input type="text" id="image" name="image" value={image} onChange={handleImage}></input>
-        <label style={{color:"white"}} htmlFor="description">Description:</label>
-        <input type="text" id="description" name="description" value={desc} onChange={handleDesc}></input>
-        <br/>
-        <input type="submit"></input>
+        <div className="form-container form-holder" >
+            <h4 className="header text-light">Add New Planet</h4>
+            {/* <br/> */}
+        <form  onSubmit={handleSubmit}>
+            <div className="form-group">
+            <div className="row">
+                <label className="form-label" style={{color:"white"}} htmlFor="name">Planet Name:</label>
+                <input className="form-input "  placeholder="Planet Name" type="text" id="name" name="name" value={name} onChange={handleName}></input>
+            </div>
+            <div className="row">
+            <label className="form-label" style={{color:"white"}} htmlFor="moons">Number of Moons:</label>
+            <input className="input form-input " type="text" id="moons" name="moons" placeholder="Moons" value={moons} onChange={handleMoons}></input>
+            </div>
+            <div className="row">
+            <label className="form-label"style={{color:"white"}} htmlFor="radius">Radius of Planet:</label>
+            <input className="input form-input " type="text" id="radius" name="radius" placeholder="Radius" value={radius} onChange={handleRadius}></input>
+            </div>
+            <div className="row">
+            <label className="form-label"style={{color:"white"}} htmlFor="distance">Distance from the Sun in Mi.:</label>
+            <input className="input form-input " type="text" id="distance" name="distance" placeholder="Distance" value={distance} onChange={handleDistance}></input>
+            </div>
+            <div className="row">
+                <label className="form-label"style={{color:"white"}} htmlFor="temperature">Temperature in degrees F:</label>
+                <input className="input form-input " type="text" id="temperature" name="temperature" placeholder="Temperature" value={temperature} onChange={handleTemperature}></input>
+            </div>
+            <div className="row">
+                <label className="form-label" style={{color:"white"}} htmlFor="type">Type:</label>
+                <select className="form-input  input" id="type" name="type" value={type} onChange={handleType}>
+                    <option value="Terrestrial">Terrestrial</option>
+                    <option value="Gas Giant">Gas Giant</option>
+                    <option value="Ice Giant">Ice Giant</option>
+                    <option value="Dwarf Planet">Dwarf Planet</option>
+                </select>
+            </div>
+            <div className="row ">
+                <label className="form-label"style={{color:"white"}} htmlFor="image">Image URL:</label>
+                <input className="input form-input " type="text" id="image" name="image" placeholder="Image" value={image} onChange={handleImage}></input>
+            </div>
+            <div className="row ">
+            <label className="form-label" style={{color:"white"}} htmlFor="description">Description:</label>
+            <input className="input form-input " type="text" id="description" name="description" placeholder="Description" value={desc} onChange={handleDesc}></input>
+            </div>
+            <div className="row">
+            <input className="form-input-btn input form-input sumbit-button" type="submit"></input>
+            </div>
+            </div>
+       
+      
     </form>
     </div>
 )
