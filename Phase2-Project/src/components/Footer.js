@@ -34,7 +34,7 @@ function Footer(){
                         </ul>
                     </div>
                 </div>
-                <hr/>
+                {/* <hr/> */}
                 <div className="row">
                     <p className="col-sm">
                         &copy;{new Date().getFullYear()} FLATIRON PLANETARIUM INC | All rights reserved | Terms of Service | Privacy
