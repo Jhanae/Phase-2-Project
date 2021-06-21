@@ -1,8 +1,9 @@
 import React from 'react'
+import PlanetInfo from "./PlanetInfo"
 
 function PlanetElement({planet}) {
 
-    let hrefLink=`planet/+${planet.name}`
+    let hrefLink=`planet/${planet.name}`
     
     return (
         <div className=" text-center  col-md-4 ">
@@ -12,7 +13,7 @@ function PlanetElement({planet}) {
                 <div className="card-body text-light">
                 <h5 className="card-title ">{planet.name}</h5>
                 <h5 className="card-text text-secondary">{planet.description}</h5>
-                <a href={hrefLink} className="btn btn-outline-success">View Planet</a>
+                <a href={"/planet/Mercury"} onClick={(e) => {return <PlanetInfo planet={ e.target.value}/>}} className="btn btn-outline-success">View Planet</a>
                 
             </div>
             <br />
