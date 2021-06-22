@@ -23,22 +23,37 @@ function CommentSection(){
     );
 
     return (
-        <div className="review-container">
+        <div className="review-container ">
             <br />
 
             <h1 className="text-light">Reviews</h1>
             <ColoredLine className="hr" color="white" />
             <hr className="text-divider"/>
-            <div>
-            <ul>
-                    <li className="text-light">Astounding! I had no idea Pluto was no longer a planet.</li>
-                    <li className="text-light">Ten stars for Saturn! Just the coolest.</li>
-                {commentArray.map((comment)=><li key={comment}>{comment}</li>)}</ul>
+            <div className="review-holder">
+            {/* <ul className="ul-container"> */}
+                <div className="card text-white bg-info text-container">
+                    <p className="text-light">Astounding! I had no idea Pluto was no longer a planet.</p>
+                </div>
+                <div className="card text-white bg-info text-container">
+                    <p className="text-light">Ten stars for Saturn! Just the coolest.</p>
+                </div>
+                {commentArray.map((comment) => {
+                    return(
+                    
+                <div className="card text-white bg-info text-container">
+                    <p className="text-light" key={comment}>{comment}</p>
+                    </div>
+                )})}
+            {/* </ul> */}
+                <br/>
+                <br/>
+                <br/>
+                
                 <form onSubmit={handleSubmit}>
                     <label className="text-light" htmlFor="comment">Leave a Review: </label> <br/>
-                    <input className="form-control"  type="text" id="comment" name="comment" value={newComment} onChange={(e)=>setNewComment(e.target.value)}></input>
+                    <input placeholder="Leave a comment...." className="comment-box"  type="text" id="comment" name="comment" value={newComment} onChange={(e)=>setNewComment(e.target.value)}></input>
                     <br/>
-                    <input className="form-input-btn input form-input sumbit-button" type="submit"></input>
+                    <input className="review-btn input" type="submit"></input>
                 </form>
                 
             </div>

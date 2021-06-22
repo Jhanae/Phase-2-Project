@@ -2,6 +2,7 @@ import '../App.css'
 import './homeBody.css'
 import React from 'react'
 import video from "./Pictures/spaceVideo.mp4"
+import Footer from './Footer'
 
 function Home(){
     return(
@@ -24,7 +25,7 @@ function Home(){
                     Register A Planet
                 </a>
             </div>
-            
+            <Footer />
         </div>
     );
 }
