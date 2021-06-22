@@ -58,8 +58,7 @@ function AddNewForm ({planetData,setPlanetData}){
 
     return (
         <div className="form-container form-holder" >
-            <h4 className="header text-light">Add New Planet</h4>
-            {/* <br/> */}
+        <h4 className="header text-light">Add New Planet</h4>
         <form  onSubmit={handleSubmit}>
             <div className="form-group">
             <div className="row">
