@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -236,6 +237,17 @@ background: linear-gradient(
 transition: all 0.4s ease-out;
 }
 
+  
+  .review-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  }
+
 /* Filter buttons and search bar in Planet Container */
 .filter-btns{
   margin: 0.5rem;
@@ -264,12 +276,55 @@ transition: all 0.4s ease-out;
 .review-container{
  
   background-image: url("https://i.natgeofe.com/k/a2a738a9-e019-4911-98e6-17f31c45ac88/milky-way-2.jpg");
-  border-width: medium;
-  max-height: 800px;
-  width: 90rem;
-  height: 670px;
+  /* border-width: medium; */
+  max-height: 210rem;
+  width: 100%;
+  height: 200rem;
 }
 
-/* .hr{
+.comment-box{
+  padding-left: 20px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 400px;
+  border: none;
+} 
+
+
+.review-btn {
+  width: 400px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 126, 185, 0.829) 0%,
+    rgb(1, 242, 246) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  }
+  
+  .review-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  }
+
+ .text-container{
+   /* margin-left: 100px; */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 400px;
+ }
+ /* .hr{
   width: 2rem;
 } */
