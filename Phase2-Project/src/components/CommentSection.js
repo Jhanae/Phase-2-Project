@@ -50,11 +50,14 @@ function CommentSection(){
                 <br/>
                 
 
+
                 <form onSubmit={handleSubmit}>
                     <label className="text-light" htmlFor="comment">Leave a Review: </label> <br/>
                     <input placeholder="Leave a comment...." className="comment-box"  type="text" id="comment" name="comment" value={newComment} onChange={(e)=>setNewComment(e.target.value)}></input>
                     <br/>
+
                     <input className="review-btn input" type="submit"></input>
+
                 </form>
                 
             </div>

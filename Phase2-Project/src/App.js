@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/newplanet" component={()=> <AddNewForm setPlanetData={setPlanetData} planetData={planetData}/>}/>
         <Route exact path="/about-us" component={About}/>
         <Route exact path="/reviews" component={CommentSection}/>
-        {planetData.map((planet)=>{return <Route key={planet.id} exact path={`/planet/${planet.name}`} component={()=><PlanetInfo key={planet.id} planet={planet}/>}/>})}
+        {planetData.map((planet)=>{return <Route exact path={`/planet/${planet.name}`} component={()=><PlanetInfo planet={planet}/>}/>})}
       </Switch>
       </Router>
       </div>
