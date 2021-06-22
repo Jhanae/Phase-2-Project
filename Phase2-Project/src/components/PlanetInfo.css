@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 
 .tab-container {
@@ -28,23 +28,29 @@ body {
 }
 .tabs {
 
-  padding: 15px;
+  padding: 1rem;
   text-align: center;
   width: 50%;
-  background: rgba(128, 128, 128, 0.075);
+  background: rgb(255, 255, 255);
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  border: 1px solid rgba(5, 3, 22, 0.822);
   box-sizing: content-box;
   position: relative;
   outline: none;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.tabs:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
 .tabs:not(:last-child){
-  border-right: 1px solid rgba(0, 0, 0, 0.274);
+  border-right: 2px solid rgba(0, 0, 0, 0.274);
 }
 
 .active-tabs  {
-  background: white;
-  border-bottom: 1px solid transparent;
+  background: rgb(2, 43, 97);
+  border-bottom: 1px solid ;
 }
 
 .active-tabs::before {
@@ -56,7 +62,7 @@ body {
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 5px;
-  background: rgb(88, 147, 241);
+  background: rgba(21, 36, 163, 0.623);
 }
   
 button {
@@ -67,7 +73,7 @@ button {
   flex-grow : 1;
 }
 .content {
-  background: white;
+  background: rgb(253, 254, 255);
   padding: 20px;
   width: 100%;
   height: 100%;

@@ -10,9 +10,9 @@ const toggleTab = (index) => {
 };
 
 return (
-    <div>
+    <div className="PlanetInfo">
         <br/>
-        <h3 className="card-title ">{planet.name}</h3>
+        <h1 className="card-title text-light">{planet.name}</h1>
         <img src={planet.image} alt={planet.name} />
     <div className="tab-container">
         <div className="bloc-tabs">
@@ -58,7 +58,7 @@ return (
         <div
             className={toggleState === 1 ? "content  active-content" : "content"}
         >
-            <h5>{planet.name} has {planet.moons} moons</h5>
+            <h5>{planet.name} has {planet.moons} moon(s)</h5>
             
         </div>
 

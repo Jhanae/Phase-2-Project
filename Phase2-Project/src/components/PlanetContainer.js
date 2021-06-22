@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import PlanetElement from './PlanetElement'
 // import Button from './button'
 import Filter from './Filter'
-import {Router, Route} from "react-router"
-import PlanetInfo from "./PlanetInfo"
 
 const PlanetContainer = ({data}) => {
 
@@ -20,7 +18,7 @@ const PlanetContainer = ({data}) => {
     if(type === 'All')
     {
         console.log(type)
-        planet = data.map(item => {
+        planet = filterText.map(item => {
             return <PlanetElement planet={item} key={item.id} />
          })
     }
@@ -38,6 +36,7 @@ const PlanetContainer = ({data}) => {
                 <Filter setType={setType}/>
                 <div className="input-group-lg">
                 <input
+                    className="filterSearch"
                     type="text"
                     placeholder="Search Plants..."
                     onChange={(e) => setSearch(e.target.value)}
@@ -49,7 +48,6 @@ const PlanetContainer = ({data}) => {
                     {planet}
                     <br/>
             </div>
-            <Route exact path={`/planet/${planet.name}`} component={()=><PlanetInfo planet={planet}/>}/>
         </div>
     )
 }

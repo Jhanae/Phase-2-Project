@@ -4,7 +4,7 @@ import PlanetInfo from "./PlanetInfo"
 
 function PlanetElement({planet}) {
    
-    let hrefLink=`planet/${planet.name}`
+    // let hrefLink=`planet/${planet.name}`
     
     return (
         <div className=" text-center  col-md-4 ">
