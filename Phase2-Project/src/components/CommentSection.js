@@ -38,7 +38,7 @@ function CommentSection(){
                     <label className="text-light" htmlFor="comment">Leave a Review: </label> <br/>
                     <input className="form-control"  type="text" id="comment" name="comment" value={newComment} onChange={(e)=>setNewComment(e.target.value)}></input>
                     <br/>
-                    <input className="form-input-btn input form-input sumbit-button" type="submit"></input>
+                    <input className="form-input-btn input form-input submit-button" type="submit"></input>
                 </form>
                 
             </div>
