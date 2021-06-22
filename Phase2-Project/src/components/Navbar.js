@@ -7,7 +7,7 @@ function Navigation(){
         <div className="Nav" >
             <Navbar bg="transparent" variant="dark"
                 sticky="top" expand="sm" collapseOnSelect>
-                <Navbar.Brand>
+                <Navbar.Brand href="/home">
                 <img src={Logo} width="40px" height="40px" alt="navLogo"/>{' '}
                 FlatIron Planetarium
                 </Navbar.Brand>
@@ -19,15 +19,15 @@ function Navigation(){
                     <NavDropdown title="Planets">
                     <NavDropdown.Item href="/planets">All Planets</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/Mercury">Mercury</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/venus">Venus</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/earth">Earth</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/mars">Mars</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/jupiter">Jupiter</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/saturn">Saturn</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/uranus">Uranus</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/neptune">Neptune</NavDropdown.Item>
-                    <NavDropdown.Item href="planets/pluto">Pluto</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Mercury">Mercury</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Venus">Venus</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Earth">Earth</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Mars">Mars</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Jupiter">Jupiter</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Saturn">Saturn</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Uranus">Uranus</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Neptune">Neptune</NavDropdown.Item>
+                    <NavDropdown.Item href="/planet/Pluto">Pluto</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/planets/shop">Buy a Star</NavDropdown.Item>
                     </NavDropdown>

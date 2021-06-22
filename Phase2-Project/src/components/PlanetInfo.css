@@ -1,0 +1,97 @@
+
+
+/* card tabs */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.tab-container {
+  display:inline;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: #f1f1f1;
+  margin: 100px auto 0;
+  word-break: break-all;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+
+  padding: 1rem;
+  text-align: center;
+  width: 50%;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 1px solid rgba(5, 3, 22, 0.822);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.tabs:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+.tabs:not(:last-child){
+  border-right: 2px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs  {
+  background: rgb(2, 43, 97);
+  border-bottom: 1px solid ;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgba(21, 36, 163, 0.623);
+}
+  
+button {
+  border: 3px;;
+  
+}
+.content-tabs {
+  flex-grow : 1;
+}
+.content {
+  background: rgb(253, 254, 255);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}

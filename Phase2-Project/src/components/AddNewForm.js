@@ -1,13 +1,13 @@
 import React,{useState} from "react";
 
-import background from "./Pictures/space.jpeg"
+// import background from "./Pictures/space.jpeg"
 
 function AddNewForm ({planetData,setPlanetData}){
     const [name, setName]=useState("")
     const [moons, setMoons]=useState("")
-    const [radius, setRadius]=useState(0)
-    const [distance, setDistance]=useState(0)
-    const [temperature,setTemperature]=useState(0)
+    const [radius, setRadius]=useState("")
+    const [distance, setDistance]=useState("")
+    const [temperature,setTemperature]=useState("")
     const [type, setType]=useState("Terrestrial")
     const [image,setImage]=useState("")
     const [desc, setDesc]=useState("")
@@ -58,9 +58,8 @@ function AddNewForm ({planetData,setPlanetData}){
 
     return (
         <div className="form-container form-holder" >
-            <h4 className="header text-light">Add New Planet</h4>
-            {/* <br/> */}
-        <form  onSubmit={handleSubmit}>
+        <h4 className="header text-light">Add New Planet</h4>
+        <form className="formItem" onSubmit={handleSubmit}>
             <div className="form-group">
             <div className="row">
                 <label className="form-label" style={{color:"white"}} htmlFor="name">Planet Name:</label>

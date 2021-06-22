@@ -119,6 +119,7 @@ box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 display: grid;
 grid-template-columns: 1fr 1fr;
 background-image: url("./Pictures/space.jpeg");
+overflow: scroll;
 
 position:absolute;
 top: 46%;
@@ -134,7 +135,9 @@ align-items: center;
 paf-bottom: 400px;
 }
 
-
+.formItem{
+  z-index: 2;
+}
 
 .close-btn {
 position: relative;
@@ -168,6 +171,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
 .submit-button{
   text-align: center;
   display: grid;
@@ -231,3 +235,41 @@ background: linear-gradient(
 );
 transition: all 0.4s ease-out;
 }
+
+/* Filter buttons and search bar in Planet Container */
+.filter-btns{
+  margin: 0.5rem;
+  margin-bottom: 1.3rem;
+  padding: 0.5rem  0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background: rgba(2, 40, 107, 0.507) 100%;
+  color: #b4dbfb;
+}
+.filter-btns:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.filterSearch{
+  width: 100%;
+  border-radius: 3px;
+  padding: 0.5rem;
+  color: #03152b;
+  background-color: #92a6c7d5;
+  border: #19758f 5px;
+  margin-bottom: 1.5rem;
+}
+
+.review-container{
+ 
+  background-image: url("https://i.natgeofe.com/k/a2a738a9-e019-4911-98e6-17f31c45ac88/milky-way-2.jpg");
+  border-width: medium;
+  max-height: 800px;
+  width: 50rem;
+  height: 500px;
+}
+
+/* .hr{
+  width: 2rem;
+} */
