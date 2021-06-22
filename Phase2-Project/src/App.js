@@ -10,6 +10,7 @@ import AddNewForm from './components/AddNewForm'
 import About from './components/About'
 import Footer from './components/Footer';
 import PlanetInfo from './components/PlanetInfo';
+import CommentSection from './components/CommentSection';
 
 function App() {
   const [planetData, setPlanetData]=useState(PlanetData.PlanetData)
@@ -24,11 +25,12 @@ function App() {
         <Route path="/planets" component={() => <PlanetContainer data={planetData}/>} />
         <Route exact path="/newplanet" component={()=> <AddNewForm setPlanetData={setPlanetData} planetData={planetData}/>}/>
         <Route exact path="/about-us" component={About}/>
+        <Route exact path="/reviews" component={CommentSection}/>
         {planetData.map((planet)=>{return <Route exact path={`/planet/${planet.name}`} component={()=><PlanetInfo planet={planet}/>}/>})}
       </Switch>
       </Router>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

@@ -5,12 +5,26 @@ import Filter from './Filter'
 
 const PlanetContainer = ({data}) => {
 
+    
+    const [planetItem, setPlanetItem] = useState(data)
     const [searchText, setSearch] = useState("")
     const [type, setType] = useState('All')
     let planet ;
+    
+    function handleDelete(planetID){
+        const filteredArray = planetItem.filter((item) => item.id !== planetID)
+        // console.log(filteredArray)
+
+        fetch(`http://localhost:3000/PlanetData/${planetID}`,{
+            method: "DELETE",
+        })
+        .then(data => setPlanetItem(filteredArray))
+    }
+
+
 
     // filter data prop
-    const filterText = data.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()))
+    const filterText = planetItem.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()))
 
     //  each type
     const filterType = filterText.filter(item => item.type === type)
@@ -19,13 +33,13 @@ const PlanetContainer = ({data}) => {
     {
         console.log(type)
         planet = filterText.map(item => {
-            return <PlanetElement planet={item} key={item.id} />
+            return <PlanetElement planet={item} key={item.id} handleDelete={handleDelete} />
          })
     }
     else{
         console.log('cant get this function right')
         planet = filterType.map(item => {
-            return <PlanetElement planet={item} key={item.id} />
+            return <PlanetElement planet={item} key={item.id}  handleDelete={handleDelete}  />
          })
     }  
 

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './PlanetInfo.css'
+import Footer from "./Footer";
 
 function PlanetInfo({planet}){
 
@@ -65,7 +66,7 @@ return (
         <div
             className={toggleState === 2 ? "content  active-content" : "content"}
         >
-            <h5>{planet.name} has a radius or {planet.radius} miles.</h5>
+            <h5>{planet.name} has a radius of {planet.radius} miles.</h5>
             
             {/* <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
@@ -100,6 +101,9 @@ return (
         </div>
         </div>
     </div>
+    <br/>
+    <br />
+ 
   </div>
 );
 }

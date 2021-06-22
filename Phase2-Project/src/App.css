@@ -119,6 +119,7 @@ box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 display: grid;
 grid-template-columns: 1fr 1fr;
 background-image: url("./Pictures/space.jpeg");
+overflow: scroll;
 
 position:absolute;
 top: 46%;
@@ -134,6 +135,9 @@ align-items: center;
 paf-bottom: 400px;
 }
 
+.formItem{
+  z-index: 2;
+}
 
 .close-btn {
 position: relative;
@@ -167,6 +171,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
 .submit-button{
   text-align: center;
   display: grid;
@@ -238,11 +243,7 @@ transition: all 0.4s ease-out;
   padding: 0.5rem  0.5rem;
   border-radius: 4px;
   cursor: pointer;
-  background: linear-gradient(
-  90deg,
-  rgb(44, 116, 194) 0%,
-  rgba(0, 34, 92, 0.507) 100%
-  );
+  background: rgba(2, 40, 107, 0.507) 100%;
   color: #b4dbfb;
 }
 .filter-btns:hover{
@@ -259,3 +260,16 @@ transition: all 0.4s ease-out;
   border: #19758f 5px;
   margin-bottom: 1.5rem;
 }
+
+.review-container{
+ 
+  background-image: url("https://i.natgeofe.com/k/a2a738a9-e019-4911-98e6-17f31c45ac88/milky-way-2.jpg");
+  border-width: medium;
+  max-height: 800px;
+  width: 50rem;
+  height: 500px;
+}
+
+/* .hr{
+  width: 2rem;
+} */
