@@ -332,6 +332,8 @@ transition: all 0.4s ease-out;
  #about{
   background-image: url("./Pictures/space.jpeg");
   padding-top: 1rem;
+  padding-bottom: 2rem
+
 }
 
 .contact-page{

@@ -1,6 +1,5 @@
 import './App.css';
-import React, {useState} from 'react'
-import PlanetData from './db.json'
+import React, {useState, useEffect} from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
@@ -14,7 +13,23 @@ import CommentSection from './components/CommentSection';
 import Contact from './components/Contact.js';
 
 function App() {
-  const [planetData, setPlanetData]=useState(PlanetData.PlanetData)
+  const [planetData, setPlanetData]=useState([])
+
+  const API="http://localhost:3000/PlanetData"
+
+  useEffect(()=>{
+    fetch(API)
+    .then(r=>r.json())
+    .then((data)=>{
+      setPlanetData(data)
+    })
+  },[])
+
+
+
+
+
+  
 
   return (
     <div className="App page-container">

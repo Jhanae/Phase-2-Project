@@ -5,16 +5,16 @@ import Footer from './Footer'
 function About() {
     return (
         <div id="about">
-            <br />
+            
             <h2 className="text-light">About Us</h2>
             <br />
             <p className="text-light">Planetarium site for Phase 2 Project</p>
             <small className="text-light">Built with React JS, Bootstrap and lots of CSS.</small>
             <br />
-            <br/>
+            
             <img src={gif} alt="I made this" />
             <br />
-            <br />
+            
             <div>
             <br />
                 

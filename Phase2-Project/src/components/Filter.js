@@ -1,5 +1,4 @@
 import React from 'react'
-import info from '../db.json'
 import { useState } from 'react'
 
 function Filter({setType, showAll}){
