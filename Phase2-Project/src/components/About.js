@@ -1,19 +1,30 @@
 import React from "react";
+import gif from './Pictures/giphy.gif'
+import Footer from './Footer'
 
 function About() {
     return (
         <div id="about">
-            <h2>About Us</h2>
-            <p>Planetarium site for Phase 2 Project</p>
-            <small>Definitely stole this page from lecture</small>
+            <br />
+            <h2 className="text-light">About Us</h2>
+            <br />
+            <p className="text-light">Planetarium site for Phase 2 Project</p>
+            <small className="text-light">Built with React JS, Bootstrap and lots of CSS.</small>
+            <br />
             <br/>
-            <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
+            <img src={gif} alt="I made this" />
+            <br />
+            <br />
             <div>
-                <h3>Links</h3>
-                <a href="https://github.com/Jhanae/Phase-2-Project">GitHub Repo </a>
+            <br />
+                
+                <h3 className="text-light">Links</h3>
+                <br />
+                <a href="https://github.com/Jhanae/Phase-2-Project">GitHub Repo</a>
                 <br/>
                 <a href="https://www.linkedin.com/in/liza/">LinkedIn</a>
             </div>
+            <Footer />
         </div>
     );
 }

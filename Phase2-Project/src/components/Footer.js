@@ -17,20 +17,18 @@ function Footer(){
                     </div>
                     {/* column 2 */}
                     <div className="col">
-                        <h4>Something</h4>
+                        <h4>Jhanae Chisholm</h4>
                         <ul className="list-unstyled">
-                            <li>123-456-7890</li>
-                            <li>Washington DC</li>
-                            <li>666 Fake Street</li>
+                            <li>jhanaechisholm12@gmail.com</li>
+                            <li>Harrisburg PA</li>
                         </ul>
                     </div>
                     {/* column 3 */}
                     <div className="col">
-                        <h4>Something</h4>
+                        <h4>Kaia Bergmann-Dean</h4>
                         <ul className="list-unstyled">
-                            <li>Data</li>
-                            <li>Stuff</li>
-                            <li>Fake Street</li>
+                            <li>kbergmanndean@gmail.com</li>
+                            <li>Riverdale MD</li>
                         </ul>
                     </div>
                 </div>
