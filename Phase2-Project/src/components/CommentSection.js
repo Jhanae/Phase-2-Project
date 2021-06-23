@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import image from "../Pictures/space.jpeg"
+import Footer from './Footer'
 
 function CommentSection(){
     const [commentArray, setCommentArray]=useState([])
@@ -61,6 +62,7 @@ function CommentSection(){
                 </form>
                 
             </div>
+            <Footer />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import PlanetElement from './PlanetElement'
 // import Button from './button'
 import Filter from './Filter'
+import Footer from './Footer'
 
 const PlanetContainer = ({data}) => {
 

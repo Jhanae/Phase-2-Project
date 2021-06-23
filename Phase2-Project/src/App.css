@@ -128,12 +128,12 @@ left: 50%;
 bottom: 0%;
 transform: translate(-50%, -50%);
 width: 100%;
-height: 100%;
+height: 110%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-paf-bottom: 400px;
+/* paf-bottom: 400px; */
 }
 
 .formItem{
@@ -192,9 +192,13 @@ width: 80%;
 
 .form-label {
 display: inline-block;
-font-size: 0.8rem;
+font-size: 1.2rem;
 margin-bottom: 6px;
 color: #fff;
+}
+
+.header{
+  font-size: 1.2rem;
 }
 
 .form-input {
@@ -325,6 +329,12 @@ transition: all 0.4s ease-out;
    margin-right: auto;
    width: 400px;
  }
- /* .hr{
-  width: 2rem;
-} */
+ #about{
+  background-image: url("./Pictures/space.jpeg");
+  padding-top: 1rem;
+}
+
+.contact-page{
+  background-image: url("./Pictures/space.jpeg");
+  padding: 1rem;
+}

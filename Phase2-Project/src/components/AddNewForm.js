@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-
+import Footer from "./Footer";
 // import background from "./Pictures/space.jpeg"
 
 function AddNewForm ({planetData,setPlanetData}){
@@ -58,6 +58,10 @@ function AddNewForm ({planetData,setPlanetData}){
 
     return (
         <div className="form-container form-holder" >
+            <br />
+            <br />
+            <br />
+            <br />
         <h4 className="header text-light">Add New Planet</h4>
         <form className="formItem" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -102,9 +106,8 @@ function AddNewForm ({planetData,setPlanetData}){
             <input className="form-input-btn input form-input sumbit-button" type="submit"></input>
             </div>
             </div>
-       
-      
     </form>
+    {/* <Footer /> */}
     </div>
 )
 
