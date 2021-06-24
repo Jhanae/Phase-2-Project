@@ -6,13 +6,13 @@ function Contact(){
         <div className="contact-page">
             <br />
             <br />
-            <h3 className="text-light">Contact us</h3>
+            <h3 className="text-light">Contact Us</h3>
             <img src={sun} alt="the sun"/>
             <br />
             <br/>
             <br/>
             <br/>
-            <h6 className="text-light">On Slack</h6>
+            <h4 className="text-light">On Slack</h4>
             <div className="container">
 
                 <div className="row">
@@ -22,6 +22,8 @@ function Contact(){
                         <ul className="list-unstyled">
                             <li>jhanaechisholm12@gmail.com</li>
                             <li>Harrisburg PA</li>
+                            <br/>
+                            <br/>
                         </ul>
                     </div>
                     {/* column 3 */}
@@ -30,6 +32,8 @@ function Contact(){
                         <ul className="list-unstyled">
                             <li>kbergmanndean@gmail.com</li>
                             <li>Riverdale MD</li>
+                            <br/>
+                            <br/>
                         </ul>
                     </div>
                 </div>

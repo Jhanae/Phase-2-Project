@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import PlanetInfo from './components/PlanetInfo';
 import CommentSection from './components/CommentSection';
 import Contact from './components/Contact.js';
+import Distance from './components/Distance';
+
 
 function App() {
   const [planetData, setPlanetData]=useState([])
@@ -26,11 +28,6 @@ function App() {
   },[])
 
 
-
-
-
-  
-
   return (
     <div className="App page-container">
       <div className="content-wrap" >
@@ -39,6 +36,7 @@ function App() {
       <Switch>
         <Route exact path="/home" component={Home}/>
         <Route path="/planets" component={() => <PlanetContainer data={planetData}/>} />
+        <Route path="/distance" component={() => <Distance planets={planetData}/>} />
         <Route exact path="/newplanet" component={()=> <AddNewForm setPlanetData={setPlanetData} planetData={planetData}/>}/>
         <Route exact path="/about-us" component={About}/>
         <Route exact path="/reviews" component={CommentSection}/>

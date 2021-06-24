@@ -18,6 +18,353 @@
 .card{
   width: 20rem;
   margin: 0.8rem;
+}.App {
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.background{
+  position:fixed;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 900px;
+}
+
+/* card details */
+.card{
+  width: 20rem;
+  margin: 0.8rem;
+}
+.card-body{
+  padding: 1rem;
+}
+.card-text{
+  font-size: 0.9rem;
+  padding: 0.4rem;
+}
+.card:hover{
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 253)!important;
+}
+.container-fluid{
+  padding-top: 4rem;
+}
+.card-img-top:hover{
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.overflow{
+  overflow: hidden;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* push footer to bottom */
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap{
+  flex:1;
+}
+
+/* nav */
+.Nav{
+  background: rgba(2, 2, 2, 0.692);
+}
+
+/* planet container */
+.planet-container{
+  background-image: url("./Pictures/space.jpeg");
+  width: 100%;
+  padding: 2rem;
+  align-content: right;
+}
+
+.input-group{
+  align-content: center;
+  padding-left:7em;
+  
+}
+
+.PlanetInfo{
+  background-image: url("./Pictures/space.jpeg");
+  width: 100%;
+  padding: 2rem;
+  align-content: right;
+}
+
+
+/* form css */
+.form-container {
+box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+display: grid;
+grid-template-columns: 1fr 1fr;
+background-image: url("./Pictures/space.jpeg");
+overflow: scroll;
+
+position:absolute;
+top: 46%;
+left: 50%;
+bottom: 0%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: 110%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* paf-bottom: 400px; */
+}
+
+.formItem{
+  z-index: 2;
+}
+
+.close-btn {
+position: relative;
+top: 2%;
+right: 3%;
+font-size: 1.5rem;
+z-index: 1;
+color: #fff;
+cursor: pointer;
+}
+
+.form-content-left {
+background: linear-gradient(
+  90deg,
+  rgb(39, 176, 255) 0%,
+  rgb(0, 232, 236) 100%
+);
+border-radius: 10px 0 0 10px;
+position: relative;
+}
+
+.form {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 90%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.submit-button{
+  text-align: center;
+  display: grid;
+}
+
+.header {
+font-size: 1rem;
+width: 80%;
+margin-bottom: 1rem;
+color: #fff;
+}
+
+.form-inputs {
+margin-bottom: 0.5rem;
+width: 80%;
+}
+
+.form-label {
+display: inline-block;
+font-size: 1.2rem;
+margin-bottom: 6px;
+color: #fff;
+}
+
+.header{
+  font-size: 1.2rem;
+}
+
+.form-input {
+padding-left: 20px;
+outline: none;
+border-radius: 2px;
+height: 40px;
+width: 100%;
+border: none;
+}
+
+.form-input::placeholder {
+color: #595959;
+font-size: 12px;
+}
+
+.form-input-btn {
+width: 100%;
+height: 40px;
+margin-top: 5px;
+border-radius: 5px;
+background: linear-gradient(
+  90deg,
+  rgba(24, 126, 185, 0.829) 0%,
+  rgb(1, 242, 246) 100%
+);
+outline: none;
+border: none;
+color: #fff;
+font-size: 1rem;
+}
+
+.form-input-btn:hover {
+cursor: pointer;
+background: linear-gradient(
+  90deg,
+  rgb(39, 143, 255) 0%,
+  rgb(12, 99, 250) 100%
+);
+transition: all 0.4s ease-out;
+}
+
+  
+  .review-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  }
+
+/* Filter buttons and search bar in Planet Container */
+.filter-btns{
+  margin: 0.5rem;
+  margin-bottom: 1.3rem;
+  padding: 0.5rem  0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background: rgba(2, 40, 107, 0.507) 100%;
+  color: #b4dbfb;
+}
+.filter-btns:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.filterSearch{
+  width: 100%;
+  border-radius: 3px;
+  padding: 0.5rem;
+  color: #03152b;
+  background-color: #92a6c7d5;
+  border: #19758f 5px;
+  margin-bottom: 1.5rem;
+}
+
+.review-container{
+ 
+  background-image: url("https://i.natgeofe.com/k/a2a738a9-e019-4911-98e6-17f31c45ac88/milky-way-2.jpg");
+  /* border-width: medium; */
+  max-height: 210rem;
+  width: 100%;
+  height: 200rem;
+}
+
+.comment-box{
+  padding-left: 20px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 400px;
+  border: none;
+} 
+
+
+.review-btn {
+  width: 400px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 126, 185, 0.829) 0%,
+    rgb(1, 242, 246) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  }
+  
+  .review-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  }
+
+ .text-container{
+   /* margin-left: 100px; */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 400px;
+ }
+ #about{
+  background-image: url("./Pictures/space.jpeg");
+  padding-top: 1rem;
+}
+
+.contact-page{
+  background-image: url("./Pictures/space.jpeg");
+  padding: 1rem;
+}
+
+.distanceP{
+  display: none;
+}
+
+.active-distanceP{
+  display: block;
 }
 .card-body{
   padding: 1rem;
