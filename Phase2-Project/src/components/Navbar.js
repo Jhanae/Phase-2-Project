@@ -3,6 +3,8 @@ import Logo from './Pictures/spacebackground.jpeg';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 function Navigation(){
+
+
     return (
         <div className="Nav" >
             <Navbar bg="transparent" variant="dark"

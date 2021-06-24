@@ -18,6 +18,7 @@ function PlanetElement({planet, handleDelete}) {
                 // onClick={(e) => {return <PlanetInfo />}} 
                 className="btn btn-outline-success">View Planet</a> 
                 <button className="btn btn-outline-success" onClick={(e) => handleDelete(planet.id)} >Delete</button>
+                
             </div>
         </div>
     )

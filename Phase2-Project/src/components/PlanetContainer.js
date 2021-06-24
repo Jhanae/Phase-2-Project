@@ -22,7 +22,16 @@ const PlanetContainer = ({data}) => {
         .then(data => setPlanetItem(filteredArray))
     }
 
-
+    function sortAlphabetically(){
+        data.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    }
+    function sortRadius(){
+        data.sort((a, b) => (a.radius > b.radius) ? 1 : -1)
+    }
+    function sortDistance(){
+        data.sort((a, b) => (a.distanceFromSun < b.distanceFromSun) ? 1 : -1)
+    }
+    
 
     // filter data prop
     const filterText = planetItem.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()))
@@ -47,8 +56,8 @@ const PlanetContainer = ({data}) => {
      return (
         <div className="planet-container container-fluid  justify-content-center">
             <div className="container">
-
-                <Filter setType={setType}/>
+            
+                <Filter sortAlphabetically={sortAlphabetically} sortRadius={sortRadius} sortDistance={sortDistance} setType={setType}/>
                 <div className="input-group-lg">
                 <input
                     className="filterSearch"
@@ -63,6 +72,10 @@ const PlanetContainer = ({data}) => {
                     {planet}
                     <br/>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }
