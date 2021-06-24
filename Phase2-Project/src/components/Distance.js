@@ -21,7 +21,7 @@ function Distance({planets}){
     return (
         <div className="distance-container">
             <br/>
-            <h1 className="distance-header text-light">Planets Distance from the Sun</h1>
+            <h1 className="distance-header text-light">Planets' Distance from the Sun</h1>
             <br />
             <br />
             <br />

@@ -77,7 +77,7 @@ return (
         <div
             className={toggleState === 3 ? "content  active-content" : "content"}
         >
-            <h5>{planet.name} is approximately {planet.distance} million miles away from the sun.</h5>
+            <h5>{planet.name} is approximately {planet.distanceFromSun} million miles away from the sun.</h5>
             
         </div>
 
