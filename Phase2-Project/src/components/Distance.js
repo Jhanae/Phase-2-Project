@@ -26,7 +26,7 @@ function Distance({planets}){
             <br />
             <br />
             <br />
-            <div className="containerD">
+            <div className="containerD">x
                 <div className="row">
                 <br/>
                 <div className="col sun-row">

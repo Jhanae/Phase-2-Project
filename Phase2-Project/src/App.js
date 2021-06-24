@@ -30,6 +30,7 @@ function App() {
         <Route exact path="/reviews" component={CommentSection}/>
         <Route exact path="/contact-us" component={Contact}/>
         {planetData.map((planet)=>{return <Route exact path={`/planet/${planet.name}`} component={()=><PlanetInfo planet={planet}/>}/>})}
+        <Route exact path="" component={Home}/>
       </Switch>
       </Router>
       </div>
