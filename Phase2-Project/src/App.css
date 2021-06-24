@@ -338,3 +338,11 @@ transition: all 0.4s ease-out;
   background-image: url("./Pictures/space.jpeg");
   padding: 1rem;
 }
+
+.distanceP{
+  display: none;
+}
+
+.active-distanceP{
+  display: block;
+}

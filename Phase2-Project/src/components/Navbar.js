@@ -29,7 +29,7 @@ function Navigation(){
                     <NavDropdown.Item href="/planet/Neptune">Neptune</NavDropdown.Item>
                     <NavDropdown.Item href="/planet/Pluto">Pluto</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/planets/shop">Buy a Star</NavDropdown.Item>
+                    <NavDropdown.Item href="/distance">Distance From the Sun</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/reviews">Reviews</Nav.Link>
                     <Nav.Link href="/about-us">About Us</Nav.Link>

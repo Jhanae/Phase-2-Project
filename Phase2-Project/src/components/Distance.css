@@ -1,0 +1,30 @@
+.planet-row{
+    margin: 0cm;
+    padding: 0cm;
+}
+.sun-row{
+    margin-left: 2cm;
+}
+/* .planet-row:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+} */
+.planet-img{
+    width: 100px;
+
+}
+
+.sun-img{
+    width: 100px;
+}
+
+.containerD{
+    display:flex;
+    position:inherit;
+    height: 100%;
+}
+.distance-container{
+    background-image: url("./Pictures/space.jpeg");
+    min-height: 100rem;
+  }
+

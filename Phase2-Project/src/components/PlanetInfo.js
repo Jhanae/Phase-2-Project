@@ -13,8 +13,13 @@ const toggleTab = (index) => {
 return (
     <div className="PlanetInfo">
         <br/>
+        
         <h1 className="card-title text-light">{planet.name}</h1>
+        <br/>
         <img src={planet.image} alt={planet.name} />
+        <br/>
+        <br/>
+        <br/>
     <div className="tab-container">
         <div className="bloc-tabs">
         <button
@@ -77,7 +82,7 @@ return (
         <div
             className={toggleState === 3 ? "content  active-content" : "content"}
         >
-            <h5>{planet.name} is approximately {planet.distance} million miles away from the sun.</h5>
+            <h5>{planet.name} is approximately {planet.distanceFromSun} million miles away from the sun.</h5>
             
         </div>
 
@@ -103,7 +108,7 @@ return (
     </div>
     <br/>
     <br />
- 
+        
   </div>
 );
 }
