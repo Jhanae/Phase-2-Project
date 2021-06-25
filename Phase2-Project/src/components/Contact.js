@@ -37,7 +37,7 @@ function Contact(){
                         </ul>
                     </div>
                 </div>
-                
+                <br/>
             </div>
         </div>
     )

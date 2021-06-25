@@ -99,10 +99,14 @@ return (
             <h5>{planet.name} is a {planet.type}.</h5>
             
         </div>
-        </div>
+        </div><br/>
+    <br />
     </div>
     <br/>
     <br />
+    <br/>
+    <br />
+    <li/>
  
   </div>
 );

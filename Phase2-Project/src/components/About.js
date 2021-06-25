@@ -22,8 +22,10 @@ function About() {
                 <br />
                 <a href="https://github.com/Jhanae/Phase-2-Project">GitHub Repo</a>
                 <br/>
-                <a href="https://www.linkedin.com/in/liza/">LinkedIn</a>
+                {/* <a href="https://www.linkedin.com/in/liza/">LinkedIn</a> */}
                 <br/>
+                <br/>
+                <br />
                 <li/>
             </div>
             <Footer />
