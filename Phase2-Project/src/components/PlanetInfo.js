@@ -96,7 +96,7 @@ return (
         <div
             className={toggleState === 7 ? "content  active-content" : "content"}
         >
-            <h5>{planet.name} is a {planet.type} planet</h5>
+            <h5>{planet.name} is a {planet.type}.</h5>
             
         </div>
         </div>
