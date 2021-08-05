@@ -14,7 +14,6 @@ function Navigation(){
                 FlatIron Planetarium
                 </Navbar.Brand>
 
-                <Navbar.Toggle className="coloring" />
                 <Navbar.Collapse>
                 <Nav>
                     <Nav.Link href="/home">Home</Nav.Link>   

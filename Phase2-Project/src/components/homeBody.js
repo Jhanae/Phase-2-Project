@@ -5,7 +5,7 @@ import video from "./Pictures/spaceVideo.mp4"
 function homeBody(){
     return (
         <div className="video-container">
-            <video src="./Pictures/spaceVideo.mp4" autoPlay loop muted />
+            {/* <video src="./Pictures/spaceVideo.mp4" autoPlay loop muted /> */}
             <h1>Let's Explore</h1>
             <p>...the unknown</p>
             <div className="videobtns">

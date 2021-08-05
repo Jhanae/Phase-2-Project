@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import sun from './Pictures/sun.png'
 import './Distance.css'
-import { debug } from 'debug'
 // import styled from "styled-components";
 import DistanceElement from './DistanceElement';
 
